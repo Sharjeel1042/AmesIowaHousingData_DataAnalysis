@@ -16,6 +16,5 @@ for patch in ax.patches:
         va='bottom'
     )
 
-
-plt.show()
 plt.savefig('Histogram_SalePrice.png')
+plt.show()
