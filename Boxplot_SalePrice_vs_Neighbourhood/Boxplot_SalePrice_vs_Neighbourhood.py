@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-plt.figure(figsize=(8,4))
+plt.figure(figsize=(8,6))
 sns.boxplot(data=df_cleaned,x='saleprice',y='neighborhood')
 plt.ylabel('Neighbourhood')
 plt.xlabel('Sale Price')
