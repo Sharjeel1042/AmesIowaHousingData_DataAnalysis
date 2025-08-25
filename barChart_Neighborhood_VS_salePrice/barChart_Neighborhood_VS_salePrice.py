@@ -2,8 +2,9 @@ from main import df_cleaned
 import matplotlib.pyplot as plt
 import pandas as pd
 
-grp=df_cleaned.groupby('neighborhood')['saleprice'].mean()
 
+grp=df_cleaned.groupby('neighborhood')['saleprice'].mean()
+plt.figure(figsize=(15,5))
 bars=plt.bar(grp.index,grp.values,color='purple')
 plt.xticks(fontsize=6)
 plt.title('Average Sale Price vs Neighborhood',fontdict={'family':'DejaVu Sans'})
